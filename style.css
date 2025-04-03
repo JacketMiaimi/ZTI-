@@ -1,0 +1,65 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background: #0073e6;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Футер */
+footer {
+  background: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Медиа-запрос для телефонов */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column; /* 	Элементы выстраиваются в столбец сверху вниз. */
+    gap: 5px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    background: #005bb5;
+    border-radius: 5px;
+  }
+
+  footer {
+    position: static;
+    padding: 15px;
+  }
+}
