@@ -45,26 +45,9 @@ footer {
 }
 
 /* Медиа-запрос для телефонов */
-@media (max-width: 600px) {
-  nav {
-    flex-direction: column; /* 	Элементы выстраиваются в столбец сверху вниз. */
-    gap: 5px;
-  }
-
-  nav a {
-    display: block;
-    padding: 10px;
-    background: #005bb5;
-    border-radius: 5px;
-  }
-  
-  .main-content {
-    flex: 1; /* Контент займет всё доступное пространство */
-}
-
-  footer {
-    display: flex;
-    position: static;
-    padding: 15px;
-  }
+@media (max-width: 768px) {
+    footer {
+        position: relative; /* Чтобы на мобильных устройствах футер всегда был внизу */
+        margin-top: 20px; /* Немного отступа сверху */
+    }
 }
